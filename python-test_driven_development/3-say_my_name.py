@@ -14,7 +14,7 @@ def say_my_name(first_name, last_name=""):
     >>> say_my_name("Walter", "White")
     My name is Walter White
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
     >>> say_my_name(12, "White")
     Traceback (most recent call last):
     ...
@@ -29,6 +29,6 @@ def say_my_name(first_name, last_name=""):
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
     if last_name == "":
-        print("My name is {} ".format(first_name), end="")
+        print("My name is {} ".format(first_name))
     else:
         print("My name is {} {}".format(first_name, last_name))
