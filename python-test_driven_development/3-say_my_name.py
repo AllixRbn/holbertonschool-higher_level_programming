@@ -17,11 +17,11 @@ def say_my_name(first_name, last_name=""):
     My name is Bob
     >>> say_my_name(12, "White")
     Traceback (most recent call last):
-        ...
+    ...
     TypeError: first_name must be a string
     >>> say_my_name("Allix", 24)
     Traceback (most recent call last):
-        ...
+    ...
     TypeError: last_name must be a string
     """
     if not isinstance(first_name, str):
