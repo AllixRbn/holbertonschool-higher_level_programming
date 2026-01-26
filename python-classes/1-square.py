@@ -8,4 +8,7 @@ class Square:
     - size: defines the size of the square
     """
     def __init__(self, size=0):
+        """
+        Initializes the square with a private size given by user
+        """
         self.__size = size
