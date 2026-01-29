@@ -80,8 +80,9 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        else:
-            rectangle = ""
-            for i in range(self.__height):
-                rectangle += ("#" * self.__width) + "\n"
-            return rectangle
+        rectangle = ""
+        for i in range(self.__height):
+            rectangle += ("#" * self.__width) + "\n"
+            if i == self.__height - 1:
+                rectangle += "#" * self.__width
+        return rectangle
